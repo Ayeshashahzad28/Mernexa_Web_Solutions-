@@ -64,7 +64,7 @@ export declare interface CountUpPlugin {
  */
 export class CountUp {
 
-  version = '2.10.0';
+  version = '2.10.1';
   private static observedElements = new WeakMap<HTMLElement, CountUp>();
   private defaults: CountUpOptions = {
     startVal: 0,
@@ -205,7 +205,7 @@ export class CountUp {
    * useEasing is true and the total animation amount exceeds the smartEasingThreshold.
    */
   private determineDirectionAndSmartEasing(): void {
-    const end = (this.finalEndVal) ? this.finalEndVal : this.endVal;
+    const end = (this.finalEndVal !== null) ? this.finalEndVal : this.endVal;
     this.countDown = (this.startVal > end);
     const animateAmount = end - this.startVal;
     if (Math.abs(animateAmount) > this.options.smartEasingThreshold && this.options.useEasing) {
@@ -249,6 +249,8 @@ export class CountUp {
   pauseResume(): void {
     if (!this.paused) {
       cancelAnimationFrame(this.rAF);
+      const totalRem = (this.finalEndVal !== null) ? this.duration + this.remaining : this.remaining;
+      this.remaining = totalRem;
     } else {
       this.startTime = null;
       this.duration = this.remaining;
