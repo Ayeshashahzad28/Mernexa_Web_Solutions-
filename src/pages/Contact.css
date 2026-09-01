@@ -14,9 +14,7 @@
   font-size: 1rem;
 }
 
-/* ===========================
-   GRID
-=========================== */
+/* grid */
 
 .contact-grid {
   display: grid;
@@ -25,9 +23,7 @@
   margin-top: 60px;
 }
 
-/* ===========================
-   FORM CARD
-=========================== */
+/* form card */
 
 .contact-form-card {
   padding: 35px;
@@ -43,9 +39,7 @@
   box-shadow: 0 15px 40px rgba(124, 58, 237, 0.15);
 }
 
-/* ===========================
-   FORM
-=========================== */
+/* form */
 
 .form-group {
   margin-bottom: 20px;
@@ -102,9 +96,7 @@ textarea.form-control {
   display: block;
 }
 
-/* ===========================
-   BUTTON
-=========================== */
+/* button */
 
 .btn-block {
   width: 100%;
@@ -132,9 +124,7 @@ textarea.form-control {
   box-shadow: 0 15px 35px rgba(124, 58, 237, 0.35);
 }
 
-/* ===========================
-   CONTACT INFO
-=========================== */
+/* contact info */
 
 .contact-info {
   display: flex;
@@ -173,9 +163,7 @@ textarea.form-control {
   line-height: 1.7;
 }
 
-/* ===========================
-   WHATSAPP BUTTON
-=========================== */
+/* whatsapp button */
 
 .whatsapp-btn {
   display: flex;
@@ -196,9 +184,7 @@ textarea.form-control {
   box-shadow: 0 15px 35px rgba(124, 58, 237, 0.35);
 }
 
-/* ===========================
-   ALERTS
-=========================== */
+/* alerts */
 
 .alert {
   padding: 15px;
@@ -218,9 +204,7 @@ textarea.form-control {
   color: #ef4444;
 }
 
-/* ===========================
-   LIGHT MODE
-=========================== */
+/* light mode */
 
 [data-theme="light"] .contact-form-card,
 [data-theme="light"] .info-item {
@@ -243,19 +227,7 @@ textarea.form-control {
   background: linear-gradient(135deg, #3b82f6, #7c3aed, #ec4899);
 }
 
-/* [data-theme="light"] .info-icon{
-  background:linear-gradient(
-    135deg,
-    #3B82F6,
-    #7C3AED,
-    #EC4899
-  );
-  -webkit-text-fill-color:transparent;
-} */
-
-/* ===========================
-   RESPONSIVE
-=========================== */
+/* responsive */
 
 @media (max-width: 992px) {
   .contact-grid {
