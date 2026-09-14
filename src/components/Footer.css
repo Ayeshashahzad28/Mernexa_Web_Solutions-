@@ -278,14 +278,18 @@
   color: #6b7280;
 }
 
+/* =========================
+   TABLET - 992px
+========================= */
 @media (max-width: 992px) {
+
   .footer-top {
     grid-template-columns: 1.5fr 1fr 1fr;
     gap: 35px;
   }
 
   .footer-brand {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     text-align: center;
   }
 
@@ -297,23 +301,41 @@
     justify-content: center;
   }
 
+  /* Newsletter - ONE LINE */
   .newsletter-form {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;
+    gap: 12px;
   }
 
   .newsletter-form input {
-    /* height: 165px; */
-    font-size: 17px;
-    padding: 0 20px;
+    flex: 1;
+    min-width: 0;
+    width: auto;
+    height: 60px;
+    padding: 0 18px;
+    font-size: 16px;
+    box-sizing: border-box;
   }
 
   .newsletter-form button {
-    height: 65px;
-    font-size: 17px;
+    flex: 0 0 170px;
+    width: 170px;
+    height: 60px;
+    font-size: 16px;
+    box-sizing: border-box;
   }
 }
 
+
+/* =========================
+   MOBILE - 768px
+========================= */
 @media (max-width: 768px) {
+
   .footer-top {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -332,7 +354,7 @@
     justify-content: center;
   }
 
-  /* LEFT ALIGN */
+  /* Footer columns */
   .footer-col {
     align-items: flex-start;
     text-align: left;
@@ -349,33 +371,60 @@
     justify-content: flex-start;
   }
 
+  /* =====================
+     Newsletter ONE LINE
+  ===================== */
+
   .newsletter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 100%;
+    gap: 10px;
   }
 
   .newsletter-form input {
-    width: 100%;
-    height: 60px;
-    font-size: 16px;
-    padding: 0 18px;
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    height: 55px;
+    min-height: 55px;
+    padding: 0 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
   }
 
   .newsletter-form button {
-    width: 100%;
-    height: 60px;
-    font-size: 16px;
-  }
+    flex: 0 0 150px;
+    width: 150px;
+    height: 55px;
+    min-height: 55px;
+    padding: 0 12px;
+    font-size: 15px;
+    border-radius: 10px;
 
-  .footer-newsletter h2 {
-    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   .footer-newsletter {
     padding: 45px 0;
   }
+
+  .footer-newsletter h2 {
+    font-size: 26px;
+  }
 }
 
+
+/* =========================
+   SMALL MOBILE - 480px
+========================= */
 @media (max-width: 480px) {
+
   .footer {
     margin-top: 50px;
   }
@@ -384,27 +433,58 @@
     padding: 50px 0;
   }
 
+  .footer-newsletter {
+    padding: 40px 15px;
+  }
+
   .footer-newsletter h2 {
-    font-size: 26px;
+    font-size: 24px;
+    margin-bottom: 12px;
   }
 
   .footer-newsletter p {
     font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 22px;
+  }
+
+  /* =====================
+     Newsletter ONE LINE
+  ===================== */
+
+  .newsletter-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
   }
 
   .newsletter-form input {
-    height: 158px;
-    font-size: 15px;
-    padding: 0 16px;
+    flex: 1 1 auto;
+    min-width: 0;
+    width: auto;
+    height: 52px;
+    min-height: 52px;
+    padding: 0 12px;
+    font-size: 14px;
+    border-radius: 9px;
+    box-sizing: border-box;
   }
 
   .newsletter-form button {
-    height: 58px;
-    font-size: 15px;
-  }
+    flex: 0 0 120px;
+    width: 120px;
+    height: 52px;
+    min-height: 52px;
+    padding: 0 8px;
+    font-size: 14px;
+    border-radius: 9px;
 
-  .footer-newsletter h2 {
-    font-size: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
   }
 
   .logo-text {
@@ -418,5 +498,49 @@
 
   .footer-col h3 {
     font-size: 18px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL - 360px
+========================= */
+@media (max-width: 360px) {
+
+  .footer-newsletter {
+    padding: 35px 10px;
+  }
+
+  .footer-newsletter h2 {
+    font-size: 21px;
+  }
+
+  .footer-newsletter p {
+    font-size: 14px;
+  }
+
+  .newsletter-form {
+    gap: 6px;
+  }
+
+  .newsletter-form input {
+    height: 50px;
+    min-height: 50px;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .newsletter-form button {
+    flex: 0 0 105px;
+    width: 105px;
+    height: 50px;
+    min-height: 50px;
+    font-size: 13px;
+    padding: 0 5px;
+  }
+
+  .footer-logo {
+    width: 38px;
+    height: 38px;
   }
 }

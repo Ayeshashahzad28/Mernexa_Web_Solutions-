@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Counter from "../components/counter";
+import ayesha from "../assets/ayesha.png";
 import {
   FiInstagram,
   FiLinkedin,
@@ -67,7 +68,7 @@ const technologies = [
   "Bootstrap",
   "WordPress",
   "Shopify",
-  "SEO",
+  "AI Tools",
   "Canva",
 ];
 
@@ -82,7 +83,7 @@ export default function About() {
       <section className="section founder-section">
         <div className="container founder-grid">
           <div className="founder-image">
-            <img src="#" alt="Ayesha Shahzad" />
+            <img src={ayesha} alt="Ayesha Shahzad" />
           </div>
 
           <div className="founder-content">
@@ -130,11 +131,11 @@ export default function About() {
                 <FiInstagram />
               </a>
 
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ayesha-shahzadd">
                 <FiLinkedin />
               </a>
 
-              <a href="www.facebook.com/share/193HdXJAuo">
+              <a href="https://www.facebook.com/share/193HdXJAuo">
                 <FiFacebook />
               </a>
             </div>

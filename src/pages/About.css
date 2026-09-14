@@ -162,6 +162,36 @@
   color: rgba(255, 255, 255, 0.86);
 }
 
+.founder-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.founder-image img {
+  width: 380px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.founder-image img:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .founder-image img {
+    width: 280px;
+    height: 350px;
+  }
+}
+
 /* founder badges */
 
 .founder-badges {
@@ -192,6 +222,8 @@
 .founder-badges span:hover {
   transform: translate(3px);
 }
+
+
 
 /* mission section */
 

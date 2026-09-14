@@ -48,7 +48,7 @@ export default function Footer() {
               <FiInstagram />
             </a>
 
-            <a href="#">
+            <a href="https://www.linkedin.com/in/ayesha-shahzadd">
               <FiLinkedin />
             </a> 
 
